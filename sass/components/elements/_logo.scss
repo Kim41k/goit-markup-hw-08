@@ -1,0 +1,25 @@
+.logo {
+  margin-right: 93px;
+  font-family: $alt-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: $logo-black-cl;
+
+  &:hover,
+  &:focus {
+    color: $logo-black-cl;
+  }
+}
+
+.logo__accent {
+  color: $accent-cl;
+}
+
+.logo-footer {
+  color: $dark-bg-text-cl;
+  &:hover,
+  &:focus {
+    color: $dark-bg-text-cl;
+  }
+}

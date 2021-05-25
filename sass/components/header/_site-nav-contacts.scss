@@ -1,0 +1,27 @@
+.site-nav-contacts {
+  margin-left: auto;
+  display: flex;
+  color: currentColor;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+
+  &__link {
+    display: flex;
+    align-items: center;
+  }
+
+  &__email-icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+
+  &__smartphone-icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+
+  &__item + &__item {
+    margin-left: 50px;
+  }
+}

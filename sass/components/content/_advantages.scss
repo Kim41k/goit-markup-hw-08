@@ -1,0 +1,30 @@
+.advantages-title {
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.advantages-list {
+  display: flex;
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__icon-wrap {
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    padding: 25px 100px;
+    background-color: $alt-bg-cl;
+  }
+}
+
+.advantages-list__item {
+  flex-basis: calc(100% / 4 - 30px);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}

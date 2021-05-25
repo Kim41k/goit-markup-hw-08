@@ -1,0 +1,23 @@
+/* Footer Join us socials */
+
+.footer-join-us {
+  padding-top: 12px;
+
+  &__title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: $dark-bg-text-cl;
+  }
+}
+
+/* Footer Social Icons */
+
+.social-icons-svg__footer-bg {
+  fill: $dark-bg-text-cl;
+}
+
+.social-icons-link__footer-bg {
+  background-color: rgba(255, 255, 255, 0.1);
+}

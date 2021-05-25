@@ -1,0 +1,35 @@
+/* Footer */
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $hero-footer-bg-cl;
+
+  &__container {
+    display: flex;
+  }
+}
+
+.footer__address {
+  margin-right: 70px;
+  font-style: normal;
+
+  &-text {
+    margin-bottom: 9px;
+    color: $dark-bg-text-cl;
+  }
+}
+
+.logo-footer {
+  display: block;
+  margin-bottom: 20px;
+  // font-style: normal;
+}
+
+.footer-contacts {
+  color: rgba(255, 255, 255, 0.6);
+
+  &__item {
+    margin-top: 9px;
+  }
+}

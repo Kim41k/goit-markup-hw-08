@@ -1,0 +1,36 @@
+/* Our clients */
+
+.clients-list {
+  display: flex;
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__item-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid $social-icons-cl;
+    border-radius: 4px;
+
+    transition: border-color 250ms $timing-function,
+      box-shadow 250ms $timing-function;
+
+    .clients-list__link:hover & {
+      border-color: $accent-cl;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
+}
+
+.clients-list__svg {
+  fill: $social-icons-cl;
+  transition: fill 250ms $timing-function;
+
+  .clients-list__link:hover & {
+    fill: $accent-cl;
+  }
+}

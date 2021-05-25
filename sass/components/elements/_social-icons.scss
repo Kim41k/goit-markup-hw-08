@@ -1,0 +1,46 @@
+/* Social Icons */
+
+.social-icons {
+  display: inline-flex;
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: $main-bg-cl;
+
+    transition: background-color 250ms $timing-function;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    background-color: $accent-cl;
+  }
+}
+
+.social-icons__svg {
+  fill: $social-icons-cl;
+  transition: fill 250ms $timing-function;
+
+  .social-icons__link:hover &,
+  .social-icons__link:focus & {
+    fill: $dark-bg-text-cl;
+  }
+}
+
+// .social-icons__svg {
+//   fill: $social-icons-cl;
+
+//   transition: fill 250ms $timing-function;
+// }
+// .social-icons__link:hover &__svg,
+// .social-icons__link:focus &__svg {
+//   fill: $dark-bg-text-cl;
+// }
