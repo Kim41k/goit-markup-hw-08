@@ -1,23 +1,59 @@
 /* Our clients */
 
 .clients-list {
+  margin-left: calc(-1 * 30px);
+  margin-top: calc(-1 * 30px);
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
-  &__item:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (min-width: $mobile) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
+
+  &__item {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    margin-left: 30px;
+    margin-top: 30px;
+
+    @media screen and (min-width: $tablet) {
+      flex-basis: calc((100% - 3 * 30px) / 3);
+    }
+
+    @media screen and (min-width: $desktop) {
+      flex-basis: calc((100% - 6 * 30px) / 6);
+    }
   }
 
   &__item-wrap {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid $social-icons-cl;
     border-radius: 4px;
 
     transition: border-color 250ms $timing-function,
       box-shadow 250ms $timing-function;
+
+    @media screen and (min-width: $tablet) {
+      width: 226px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: 170px;
+    }
 
     .clients-list__link:hover & {
       border-color: $accent-cl;

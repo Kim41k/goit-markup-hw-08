@@ -1,14 +1,25 @@
 .logo {
-  margin-right: 93px;
+  // margin-right: 163px;
   font-family: $alt-font;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   color: $logo-black-cl;
+  margin-top: 11px;
+  display: block;
 
   &:hover,
   &:focus {
     color: $logo-black-cl;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 93px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-right: 88px;
+    margin-top: 26px;
   }
 }
 

@@ -2,13 +2,25 @@
 
 .what-we-do-section {
   padding-bottom: 94px;
+
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
 }
 
 .what-we-do {
   display: flex;
+  margin-left: calc(-1 * 30px);
+  margin-top: calc(-1 * 30px);
 
-  &__item:not(:last-child) {
-    margin-right: 30px;
+  // &__item:not(:last-child) {
+  //   margin-right: 30px;
+  // }
+
+  &__item {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+    margin-left: 30px;
+    margin-top: 30px;
   }
 
   &__img-wrap {

@@ -6,7 +6,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  outline: 1px solid plum;
+  outline: 1px solid skyblue;
 }
 
 h1,
@@ -26,9 +26,14 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: $main-text-cl;
+
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
