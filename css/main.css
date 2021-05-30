@@ -888,7 +888,6 @@ img {
 .footer__container {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 @media screen and (min-width: 1200px) {
@@ -902,6 +901,7 @@ img {
 .footer__address {
   text-align: center;
   font-style: normal;
+  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -940,6 +940,12 @@ img {
 }
 
 /* Footer Join us socials */
+.footer-join-us {
+  padding-top: 12px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
 @media screen and (min-width: 1200px) {
   .footer-join-us {
     margin-bottom: 0;
