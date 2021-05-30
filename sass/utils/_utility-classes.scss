@@ -4,10 +4,15 @@
 }
 
 .section__container {
-  width: 1200px;
+  width: 100%;
+  // width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
 }
 
 .section-title {
