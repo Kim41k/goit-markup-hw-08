@@ -169,6 +169,13 @@ img {
   outline: none;
   z-index: 99;
   background-color: transparent;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .mob-nav-btn {
+    display: none;
+  }
 }
 
 .mob-nav-btn .mob-nav__icon--close {
@@ -190,7 +197,7 @@ img {
   line-height: 1.2;
   color: #000000;
   margin-top: 11px;
-  display: block;
+  display: inline-block;
 }
 
 .logo:hover, .logo:focus {
@@ -333,12 +340,6 @@ img {
   }
 }
 
-.section__container .mob-nav__icon {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-}
-
 .mobile-menu-container {
   display: none;
   position: absolute;
@@ -351,7 +352,7 @@ img {
   z-index: 98;
 }
 
-@media screen and (min-width: 768) {
+@media screen and (min-width: 768px) {
   .mobile-menu-container {
     display: none;
   }
