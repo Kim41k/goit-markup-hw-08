@@ -940,11 +940,6 @@ img {
 }
 
 /* Footer Join us socials */
-.footer-join-us {
-  padding-top: 12px;
-  margin-bottom: 60px;
-}
-
 @media screen and (min-width: 1200px) {
   .footer-join-us {
     margin-bottom: 0;
