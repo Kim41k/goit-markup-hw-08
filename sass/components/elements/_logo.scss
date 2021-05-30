@@ -16,11 +16,6 @@
   @media screen and (min-width: $desktop) {
     margin-right: 93px;
   }
-
-  @media screen and (min-width: $tablet) {
-    margin-right: 88px;
-    margin-top: 26px;
-  }
 }
 
 .logo__accent {
@@ -28,6 +23,7 @@
 }
 
 .logo-footer {
+  display: inline-block;
   color: $dark-bg-text-cl;
   &:hover,
   &:focus {

@@ -210,18 +210,12 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .logo {
-    margin-right: 88px;
-    margin-top: 26px;
-  }
-}
-
 .logo__accent {
   color: #2196f3;
 }
 
 .logo-footer {
+  display: inline-block;
   color: #ffffff;
 }
 
