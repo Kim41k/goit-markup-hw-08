@@ -906,11 +906,8 @@ img {
 }
 
 .footer__address {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  text-align: center;
   font-style: normal;
-  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -944,6 +941,7 @@ img {
   .footer-address-join-us {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 60px;
   }
 }
 
