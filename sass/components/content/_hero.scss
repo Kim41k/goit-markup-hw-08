@@ -1,29 +1,24 @@
 .hero {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  // text-align: center;
 
   &__title {
     display: block;
-    width: 696px;
+    width: 360px;
     margin-bottom: 30px;
 
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
+    font-size: 26px;
+    line-height: 1.6;
+    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    text-align: center;
     color: $dark-bg-text-cl;
 
-    @media screen and (min-width: 1200px) {
-      max-width: 696px;
-      font-size: 44px;
-      line-height: 1.36;
-    }
+    // @media screen and (min-width: 1200px) {
+    //   max-width: 696px;
+    //   font-size: 44px;
+    //   line-height: 1.4;
+    // }
   }
 
   &__overlay {
@@ -31,7 +26,11 @@
     // padding-top: 200px;
     // padding-bottom: 200px;
     // max-width: 1600px;
-    // height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
     background: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -45,7 +44,7 @@
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      .hero {
+      .hero__overlay {
         background-image: linear-gradient(
             to right,
             rgba(47, 48, 58, 0.4),
@@ -71,7 +70,7 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .hero {
+    .hero__overlay {
       background-image: linear-gradient(
           to right,
           rgba(47, 48, 58, 0.4),
@@ -82,8 +81,9 @@
     }
   }
 }
+
 @media (min-width: 1200px) {
-  .hero {
+  .hero__overlay {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -97,7 +97,7 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .hero {
+    .hero__overlay {
       background-image: linear-gradient(
           to right,
           rgba(47, 48, 58, 0.4),
