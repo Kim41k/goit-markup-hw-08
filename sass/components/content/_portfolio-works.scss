@@ -1,6 +1,7 @@
 .works {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
   margin-left: calc(-1 * #{$works-card-gap});
   margin-top: calc(-1 * #{$works-card-gap});
 
@@ -19,6 +20,10 @@
 
     @media screen and (min-width: 768px) {
       flex-basis: calc((100% - 2 * #{$works-card-gap}) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 3 * #{$works-card-gap}) / 3);
     }
   }
 

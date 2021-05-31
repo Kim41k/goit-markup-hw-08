@@ -1,7 +1,11 @@
 .page-header {
   position: relative;
   border-bottom: 1px solid #ececec;
-  padding-top: 11px;
+  padding-top: 16px;
+
+  @media screen and (max-width: 767.98px) {
+    padding-bottom: 16px;
+  }
 
   .section__container {
     display: flex;

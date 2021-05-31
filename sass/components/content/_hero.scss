@@ -21,12 +21,77 @@
     padding-top: 200px;
     padding-bottom: 200px;
     max-width: 1600px;
-    height: 600px;
+    // height: 600px;
     background: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
       url('../images/hero.jpg');
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url('../images/hero/hero@2x-480.jpg');
+      height: 400px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/hero/hero-768.jpg');
+    height: 400px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url('../images/hero/hero@2x-768.jpg');
+      height: 400px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/hero/hero-1200.jpg');
+    max-width: 1600px;
+    height: 600px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url('../images/hero/hero@2x-1200.jpg');
+      max-width: 1600px;
+      height: 600px;
+    }
   }
 }

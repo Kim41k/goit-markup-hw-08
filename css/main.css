@@ -6,7 +6,6 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  outline: 1px solid skyblue;
 }
 
 h1,
@@ -225,6 +224,12 @@ img {
   color: #ffffff;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1198.98px) {
+  .logo-footer {
+    margin: 0 auto;
+  }
+}
+
 .logo-footer:hover, .logo-footer:focus {
   color: #ffffff;
 }
@@ -266,7 +271,13 @@ img {
 .page-header {
   position: relative;
   border-bottom: 1px solid #ececec;
-  padding-top: 11px;
+  padding-top: 16px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .page-header {
+    padding-bottom: 16px;
+  }
 }
 
 .page-header .section__container {
@@ -486,8 +497,44 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
   max-width: 1600px;
-  height: 600px;
   background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero@2x-480.jpg");
+    height: 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-768.jpg");
+    height: 400px;
+  }
+}
+
+@media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi), (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero@2x-768.jpg");
+    height: 400px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-1200.jpg");
+    max-width: 1600px;
+    height: 600px;
+  }
+}
+
+@media (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 192dpi), (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero@2x-1200.jpg");
+    max-width: 1600px;
+    height: 600px;
+  }
 }
 
 .advantages-title {
@@ -770,12 +817,26 @@ img {
 
 .works-filter {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   margin-bottom: 50px;
+}
+
+@media screen and (min-width: 1200px) {
+  .works-filter {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .works-filter {
+    justify-content: center;
+  }
 }
 
 .works-filter__item:not(:last-child) {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 .works-filter__btn {
@@ -801,6 +862,7 @@ img {
 .works {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
   margin-left: calc(-1 * 30px);
   margin-top: calc(-1 * 30px);
 }
@@ -822,6 +884,12 @@ img {
 @media screen and (min-width: 768px) {
   .works__item {
     flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .works__item {
+    flex-basis: calc((100% - 3 * 30px) / 3);
   }
 }
 
@@ -1076,14 +1144,7 @@ img {
 
 /* Order modal */
 .modal-form {
-  width: 370px;
   padding: 40px;
-}
-
-@media screen and (min-width: 1200px) {
-  .modal-form {
-    width: 450px;
-  }
 }
 
 .modal-form__heading {
