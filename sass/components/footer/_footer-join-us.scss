@@ -16,6 +16,10 @@
     line-height: 1.1;
     text-transform: uppercase;
     color: $dark-bg-text-cl;
+
+    @media (min-width: $desktop) {
+      text-align: left;
+    }
   }
 }
 

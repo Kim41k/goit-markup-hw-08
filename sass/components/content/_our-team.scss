@@ -18,7 +18,7 @@
     // margin-top: calc(-1 * 30px);
   }
 
-  &__item {
+  .team-list__item {
     flex-basis: 100%;
     padding-bottom: 30px;
     margin-bottom: 30px;
@@ -41,18 +41,18 @@
     }
   }
 
-  &__meta {
+  .team-list__meta {
     padding: 30px 55px 16px 55px;
   }
 
-  &__names {
+  .team-list__names {
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
   }
 
-  &__position {
+  .team-list__position {
     font-size: 16px;
     line-height: 1.2;
   }

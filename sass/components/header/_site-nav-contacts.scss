@@ -18,29 +18,33 @@
   }
 
   @media screen and (min-width: 1200px) {
+    display: flex;
+    font-size: 14px;
+    line-height: 1.2;
     flex-direction: row;
-    &__item + &__item {
+    // align-items: baseline;
+    .site-nav-contacts__item + .site-nav-contacts__item {
       margin-left: 50px;
     }
   }
 
-  &__item {
+  .site-nav-contacts__item {
     @media screen and (min-width: 768px) {
       margin-bottom: 10px;
     }
   }
 
-  &__link {
+  .site-nav-contacts__link {
     display: flex;
     align-items: center;
   }
 
-  &__email-icon {
+  .site-nav-contacts__email-icon {
     margin-right: 10px;
     fill: currentColor;
   }
 
-  &__smartphone-icon {
+  .site-nav-contacts__smartphone-icon {
     margin-right: 10px;
     fill: currentColor;
   }

@@ -7,6 +7,10 @@
     padding-bottom: 16px;
   }
 
+  @media (min-width: $desktop) {
+    padding-top: 0;
+  }
+
   .section__container {
     display: flex;
     align-items: center;

@@ -5,7 +5,7 @@
   padding-bottom: 60px;
   background-color: $hero-footer-bg-cl;
 
-  &__container {
+  .footer__container {
     display: flex;
     flex-direction: column;
     // align-items: center;
@@ -19,7 +19,6 @@
 }
 
 .footer__address {
-  text-align: center;
   font-style: normal;
   margin-bottom: 60px;
 
@@ -28,9 +27,16 @@
     margin-right: 70px;
     font-style: normal;
     margin-bottom: 0;
+    text-align: left;
   }
 
-  &-text {
+  @media (min-width: 320px) and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__address-text {
     margin-bottom: 9px;
     color: $dark-bg-text-cl;
   }

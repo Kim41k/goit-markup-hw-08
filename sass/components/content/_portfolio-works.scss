@@ -74,6 +74,11 @@
   line-height: 1.6;
   color: $dark-bg-text-cl;
 
+  @media (min-width: 320px) and (max-width: 480px) {
+    font-size: 14px;
+    padding: 20px;
+  }
+
   .works__item-link:hover & {
     opacity: 1;
   }
