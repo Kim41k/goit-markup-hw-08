@@ -5,7 +5,7 @@
   margin-left: calc(-1 * #{$works-card-gap});
   margin-top: calc(-1 * #{$works-card-gap});
 
-  &__title {
+  .works__title {
     margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
@@ -13,7 +13,7 @@
     letter-spacing: 0.06em;
   }
 
-  &__item {
+  .works__item {
     margin-left: $works-card-gap;
     margin-top: $works-card-gap;
     background: $main-bg-cl;
@@ -27,19 +27,19 @@
     }
   }
 
-  &_item-meta {
+  .works_item-meta {
     padding: 20px 24px;
     border-left: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
   }
 
-  &__desc {
+  .works__desc {
     font-size: 16px;
     line-height: 1.9;
   }
 
-  &__img-thumb {
+  .works__img-thumb {
     position: relative;
     overflow: hidden;
   }
@@ -74,7 +74,7 @@
   line-height: 1.6;
   color: $dark-bg-text-cl;
 
-  @media (min-width: 320px) and (max-width: 480px) {
+  @media (min-width: 320px) and (max-width: 479px) {
     font-size: 14px;
     padding: 20px;
   }
